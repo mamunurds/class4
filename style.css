@@ -1,0 +1,469 @@
+/* Global Styles */
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Catamaran", sans-serif;
+    letter-spacing: 0.1rem;
+  }
+  
+  h1 {
+    font-weight: 800;
+  }
+  
+  h3 {
+    font-weight: 600;
+  }
+  
+  .heading-text {
+    font-size: 4em;
+  }
+  
+  section {
+    padding: 5em 0;
+  }
+  
+  .no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar-custom {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+  }
+  
+  /* Masthead Styles */
+  header.masthead {
+    position: relative;
+    background-image: url("https://mattdobsonweb.github.io/Basic-Bootstrap-Portfolio/images/bg-header.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 6em 0;
+  }
+  
+  @media (min-width: 768px) {
+    header.masthead {
+      padding: 11em 0;
+    }
+  }
+  
+  header.masthead .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #212529;
+    opacity: 0.7;
+  }
+  
+  /* Services Section */
+  section.services {
+    position: relative;
+    background-image: url("https://mattdobsonweb.github.io/Basic-Bootstrap-Portfolio/images/bg-services.jpg");
+    background-size: cover;
+    background-position: center bottom;
+  }
+  
+  .services .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #212529;
+    opacity: 0.7;
+  }
+  
+  .services .service-icon {
+    height: 7em;
+  }
+  
+  .services .service-icon i {
+    font-size: 5em;
+  }
+  
+  .services .service-icon i:hover {
+    font-size: 6em;
+  }
+  
+  /* Portfolio Section */
+  section.portfolio {
+    padding-bottom: 0;
+  }
+  
+  .portfolio-header {
+    margin-bottom: 5em;
+  }
+  
+  .portfolio .portfolio-image {
+    min-height: 30rem;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .portfolio .item-1 {
+    background-image: url("https://mattdobsonweb.github.io/Basic-Bootstrap-Portfolio/images/bg-showcase-1.jpg");
+  }
+  
+  .portfolio .item-2 {
+    background-image: url("https://mattdobsonweb.github.io/Basic-Bootstrap-Portfolio/images/bg-showcase-2.jpg");
+  }
+  
+  .portfolio .item-3 {
+    background-image: url("https://mattdobsonweb.github.io/Basic-Bootstrap-Portfolio/images/bg-showcase-3.jpg");
+  }
+  
+  .portfolio .portfolio-text {
+    padding: 8em;
+  }
+  
+  /* Contact Section */
+  .contact .contact-icon {
+    height: 7em;
+  }
+  
+  .contact .contact-icon i {
+    font-size: 5em;
+  }
+  
+  .contact .contact-icon i:hover {
+    font-size: 6em;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+  *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: 'Inter', sans-serif;
+  }
+  ul{
+      list-style-type:none;
+  }
+  a{
+      text-decoration: none;
+  }
+  
+  /* Subscription box */
+  footer .subscription-box{
+      padding:2rem 0 ;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+      background-color: #ddd;
+  }
+  .subscription-box h3{
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      color:#333;
+  }
+  .subscription-box .caption{
+      font-size:0.75rem;
+      color:#777;
+      margin-top:0.5rem;
+  }
+  .subscription-box input{
+      padding:0.5rem 2rem;
+      width:300px;
+      border:none;
+      border-radius:20px;
+      margin:1.5rem 0;
+      background:ghostwhite;
+  }
+  
+  .subscription-box input:focus{
+      outline:1px solid #aaa;
+  }
+  
+  .subscription-box input::placeholder{
+      color:#aaa;
+      letter-spacing: 0.1rem;
+  }
+  
+  .subscription-box button{
+      padding:0.35rem 2rem;
+      background-color: rgb(29, 132, 250);
+      color:ghostwhite;
+      text-align:center;
+      font-size:0.9rem;
+      border-radius: 50px;
+      border:none;
+      font-weight: bold;
+      transition:0.5s;
+  } 
+  .subscription-box button:hover{
+      background-color:darkblue;
+      box-shadow:2px 2px 5px #333,
+                  -2px -2px 5px #333;   
+      font-size:1.1rem;
+      transform:scale(0.9);
+  } 
+  @media screen and (max-width:500px) {
+      .subscription-box {
+          padding:1rem;
+      }
+      .subscription-box .caption{
+          word-wrap: break-word;
+      }    
+  }
+  
+  /* links provided in footer section */
+  
+  .bottom-side-links{  
+      min-height:400px; 
+      padding:2rem; 
+      display:flex;
+      flex-direction: row;
+      color:#ddd;
+      background-color: rgba(0,0,0,0.9);
+  }
+  
+  .bottom-links-div{
+      display: flex;
+      flex-direction: column;
+      flex:1;
+      color:#aaa;
+  }
+  .bottom-side-links h4{
+      padding:1.25rem 0.75rem 0.75rem 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      font-size:0.75rem;
+  }
+  .bottom-side-links i{
+      vertical-align: middle;
+  }
+  .bottom-side-links li{
+      line-height:2rem;
+      font-size:1.5rem;
+  }
+  .bottom-side-links li a{
+      font-size:0.75rem;
+      padding-left: 1rem;
+      padding-bottom:1rem;
+      text-transform: capitalize;
+      transition: 0.5s;
+  }
+  .bottom-side-links li a:hover{
+      color:ghostwhite;
+      font-size:0.8rem;
+  }
+  
+  .nav-hr{
+      width:50px;
+      margin-bottom:10px;
+      margin-left:0.25rem;
+  }
+  
+  /* address-box styling */
+  .address-box{
+      height:40vh;
+      max-width: 300px;
+      color:ghostwhite;
+      padding:1.25rem 1rem;
+      font-size: 00.75rem;
+      background-color: black;
+      /*
+      background-color: #ded82b; */
+      box-shadow: 2px 2px 5px #aaa,
+                  -2px -2px 5px #aaa;
+      margin-bottom:2px;
+  }
+  .address-box h3{
+      padding-bottom:0.75rem;
+      text-transform: uppercase;
+  }
+  .address-box .company-name{
+      font-size:0.9rem;
+      text-transform:capitalize;
+      padding-top:0.5rem;
+  }
+  .address-box .company-name span:nth-child(1){
+      padding-right:4px;
+  }
+  .address-box p{    
+      padding:0.25rem;
+  }
+  .address-box i{
+      font-size:18px;
+      margin-right:15px;
+      vertical-align: middle;
+  }
+  
+  @media screen and (max-width:500px){
+      .container{
+          padding:0;    
+      }
+      .bottom-side-links{
+          max-width: 500px;
+          color:#ddd;
+          background-color: rgba(0,0,0,0.9);
+          display:flex;
+          flex-direction: column;
+      }
+      .bottom-links-div{
+          width:90%;
+          margin:5%;
+      }
+      .bottom-links-div:first-child{
+          margin-top:2rem;
+      }
+      .bottom-links-div h4{
+          font-weight:bold;
+          font-size: 1.2rem;
+          padding-top:2rem;
+      }
+      
+      .bottom-links-div li{
+          line-height:2;
+      }  
+      .address-box{        
+          width:80%;
+          height:auto;
+          margin:2rem auto;
+      } 
+  }
+  
+  /* social media links and app links */
+  .social-links-div{
+      padding:1.25rem 0;
+      display:flex;
+      background:rgba(0,0,0,0.8);    
+      color:white;
+  }
+  .img-box{
+      width:450px;
+      height:80px;
+      display:flex;
+  }
+  .app-div{
+      width:35%;
+      margin-left:15%;
+  }
+  .app-div h4{
+      padding-left:100px;
+      padding-bottom:20px;
+      padding-top:20px;
+      font-size:90%;
+      letter-spacing: 0.05rem;
+  }
+  .app-img{
+      width:150px;
+      height:40px;
+      object-fit: cover;
+      margin:5px;
+      transition:0.5s;
+  }
+  .app-img:hover{
+      transform:scale(1.1);
+  }
+  /* sm-box */
+  
+  .sm-box{
+      display:flex;
+      flex-direction: column;
+      height:120px;
+      width:35%;
+  }
+  .sm-box h4{
+      text-transform: uppercase;
+      padding:20px 60px;
+      font-size:12px;
+      letter-spacing: 00.05rem;
+  }
+  .sm-div{
+      width:100%;
+      height:50px;
+      padding-bottom:20px;
+      display:flex;
+      justify-content: baseline;
+      align-items:flex-end;
+      margin-left:50px;
+  }
+  .sm-div i{
+      margin-left:1rem;
+      font-size:24px;
+      transition:0.5s;
+  }
+  .sm-div i:hover{
+      transform:scale(1.2);
+  }
+  
+  @media screen and (max-width:500px) {    
+      .social-links-div{
+          min-height:300px;
+          display:flex;
+          flex-direction: column;
+      }
+      .app-div{
+          width:100%;
+      }
+      .app-div h4{
+          text-align:left;
+          padding:2rem 0;
+          font-size:1.2rem;        
+      }
+      .app-div .img-box{
+          min-height:150px;
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items:flex-start;
+      }
+      .app-div .img-box img{
+          margin:1rem;
+      }
+      .sm-box{
+          display:flex;
+          flex-direction: column;
+          padding-top:2rem;
+          min-height:120px;
+          width:100%;
+      }
+      .sm-box-h4{
+          text-transform: uppercase;
+          padding:0;
+          text-align: center;
+      }
+      .sm-div{
+          min-height:70px; 
+          width:100%;       
+          display:flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items:center;
+         
+      }
+      .sm-div i{
+          margin-left:20px;
+          font-size:24px;
+      }
+      
+  }
+  
+  
+  
+  .bottom-footer{
+      padding:1rem 0;
+      background-color: rgba(0,0,0,0.9);
+      color:rgba(255, 255, 255, 0.9);
+  }
+  .bottom-footer p{
+      text-align:center;
+      font-size:0.75rem;
+      letter-spacing: 0.25rem;
+  }  
